@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Cars CRUD App</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">New Cars CRUD App</h1>
+
+        <h2>Add New Car</h2>
+        <form id="addCarForm">
+            <div class="form-group">
+                <label for="make">Make:</label>
+                <input type="text" class="form-control" id="make" name="make" required>
+            </div>
+            <div class="form-group">
+                <label for="model">Model:</label>
+                <input type="text" class="form-control" id="model" name="model" required>
+            </div>
+            <div class="form-group">
+                <label for="year">Year:</label>
+                <input type="number" class="form-control" id="year" name="year" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Car</button>
+        </form>
+
+        <h2 class="mt-5">Cars List</h2>
+        <ul id="carList" class="list-group"></ul>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    <script src="index.js"></script>
+</body>
+</html>
